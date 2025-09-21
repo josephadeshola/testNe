@@ -108,9 +108,7 @@
   }
 </script>
 
-<section
-  class="px-6 font-['Satoshi'] sm:px-6 md:px-8 lg:px-36 xl:px-36 bg-black 2xl:px-40"
->
+<section class="px-6 font-['Satoshi'] sm:px-6 md:px-8 lg:px-36 xl:px-36 bg-black 2xl:px-40">
   <div class="text-white pb-5 lg:px-7 font-light flex flex-col gap-9 bg-[#0A0701] h-full">
     <NavBar button_link="/protocol" />
 
@@ -166,13 +164,13 @@
       </div>
     </aside>
 
-    <aside class="grid py-[100px] w-full lg:grid-cols-2 gap-5 items-center justify-between">
+    <aside class="grid lg:py-[100px] w-full lg:grid-cols-2 gap-5 items-center justify-between">
       <div
         use:fadeIn={{ delay: 150, direction: 'left', offset: 60 }}
         class="flex w-full flex-col gap-4"
       >
         <div
-          class="flex items-center w-fit justify-center rounded-lg px-3 text-[#FFFFFF] h-[30px] text-[14px] leading-[120%] font-[400] tracking-[2%] ring ring-white/[0.15] shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_0_0_1px_rgba(255,255,255,0.05)] bg-[#FFFFFF14]"
+          class="flex items-center w-fit justify-center rounded-lg px-3 text-[#FFFFFF] h-[30px] text-[12px] md:text-[14px] leading-[120%] font-[400] tracking-[2%] ring ring-white/[0.15] shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_0_0_1px_rgba(255,255,255,0.05)] bg-[#FFFFFF14]"
         >
           Built for Developers
         </div>
@@ -219,39 +217,40 @@
         ></div>
       </div>
     </aside>
+
     <aside
       class="relative overflow-hidden px-4 lg:px-8 text-center lg:h-[1165px] py-10 lg:py-28 rounded-[20px] lg:rounded-[40px] flex justify-center flex-col gap-5 items-center"
     >
       <div
-        class="absolute -top-[236px] z-10 left-0 w-full h-[100%] rounded-t-[40px] overflow-hidden"
+        class="absolute -lg:top-[236px] z-10 left-0 w-full h-[100%] lg:rounded-t-[40px] overflow-hidden"
       >
         <img src={beeNet1} class="object-cover w-full h-full mix-blend-overlay" alt="" />
       </div>
       <div
-        class="absolute top-0 lg:-top-[17px] left-0 w-full h-fit rounded-t-[40px] overflow-hidden"
+        class="absolute top-0 lg:-top-[17px] left-0 w-full h-fit lg:rounded-t-[40px] overflow-hidden"
       >
         <img src={secondBlur} class="object-cover w-full h-fit" alt="" />
       </div>
       <div
-        class="absolute top-0 lg:-top-[72px] left-0 w-full h-fit rounded-t-[40px] overflow-hidden"
+        class="absolute top-0 lg:-top-[72px] left-0 w-full h-fit lg:rounded-t-[40px] overflow-hidden"
       >
         <img src={nectaCoinCurveBg} class="object-cover relative lg:top-16 w-full h-fit" alt="" />
       </div>
-      <div class="absolute bottom-0 left-0 w-full h-fit rounded-t-[40px] overflow-hidden">
+      <div class="absolute bottom-0 left-0 w-full h-fit lg:rounded-t-[40px] overflow-hidden">
         <img src={bottomWax1} class="object-cover w-full h-full" alt="" />
       </div>
 
       <div class="flex flex-col items-center gap-6">
         <div
           use:fadeIn={{ delay: 100, direction: 'up', duration: 300 }}
-          class="rounded-lg px-3 w-fit py-[10px] text-white text-[14px] leading-[120%] tracing-[2%] ring-1 ring-white/[0.15] shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_0_0_1px_rgba(255,255,255,0.05)] bg-[#FFFFFF14]"
+          class="rounded-lg px-3 w-fit py-[10px] text-white text-[14px] font-[400] leading-[120%] tracing-[2%] ring-1 ring-white/[0.15] shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_0_0_1px_rgba(255,255,255,0.05)] bg-[#FFFFFF14]"
         >
           One Token. Every Layer
         </div>
 
         <div use:fadeIn={{ delay: 200, direction: 'up', duration: 500 }} class="text-center">
           <GradientText edgeOpacity={0.1}>
-            <p class="text-[28px] md:text-[36px] max-w-[608px] font-medium leading-[120%]">
+            <p class="text-[22px] md:text-[36px] max-w-[608px] font-[500] leading-[120%]">
               NECTA Token — <br /> The Convergent Fuel of the Hive
             </p>
           </GradientText>
@@ -259,7 +258,7 @@
 
         <p
           use:fadeIn={{ delay: 400, direction: 'up', duration: 500 }}
-          class="text-[16px] md:text-[18px] leading-[140%] font-[300] max-w-[343px] md:max-w-[855px] text-center"
+          class="text-[14px] md:text-[18px] leading-[140%] font-[400] max-w-[343px] md:max-w-[855px] text-center"
         >
           $NECTA (NCT) is the native utility, governance, and incentive token powering every corner
           of the NECTER ecosystem. From running compute nodes in Dockhive to deploying intelligent
@@ -290,7 +289,7 @@
               />
             </div>
             <h3
-              class="text-white text-[12px] sm:text-[13px] md:text-[13px] lg:text-[14px] font-[300] leading-[120%] max-w-full overflow-hidden"
+              class="text-white text-[14px] sm:text-[13px] md:text-[14px] font-[400] leading-[120%] max-w-full overflow-hidden"
             >
               {feature.title}
             </h3>
@@ -314,7 +313,7 @@
         class="absolute w-full bg-gradient-to-b from-[#0A070100] left-0 bottom-0 h-full to-[#0A0701]"
       ></div>
       <div
-        class="absolute px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24  left-0 -lg:bottom-16 sm:-bottom-20 md:-bottom-24 flex w-full gap-4 md:gap-6 lg:gap-8 items-start justify-between flex-col lg:flex-row"
+        class="absolute px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 left-0 -lg:bottom-16 sm:-bottom-20 md:-bottom-24 flex w-full gap-4 md:gap-6 lg:gap-8 items-start justify-between flex-col lg:flex-row"
       >
         <div
           use:fadeIn={{ delay: 200, direction: 'right', duration: 500 }}
@@ -333,71 +332,71 @@
           <div class="flex mx-auto flex-row gap-2 sm:gap-4 md:gap-1">
             <div class="space-y-1">
               <div class="flex items-center justify-between">
-                <span class="text-[#FFE37D] lg:text-white text-[14px] font-[400]">Token Name</span>
+                <span class="text-[#FFE37D] lg:text-white text-[10px] font-[400]">Token Name</span>
                 <div
-                  class="flex-1 border-b border-dot md:w-40ted w-10 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
+                  class="flex-1 border-b border-dot md:w-40 w-20 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
                 ></div>
               </div>
               <div class="flex items-center justify-between">
-                <span class="text-[#FFE37D] lg:text-white text-[14px] font-[400]">Ticker</span>
+                <span class="text-[#FFE37D] lg:text-white text-[10px] font-[400]">Ticker</span>
                 <div
-                  class="flex-1 border-b border-dotted w-10 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
+                  class="flex-1 border-b border-dotted w-20 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
                 ></div>
               </div>
               <div class="flex items-center justify-between">
-                <span class="text-[#FFE37D] lg:text-white text-[14px] font-[400]">Total Supply</span
+                <span class="text-[#FFE37D] lg:text-white text-[10px] font-[400]">Total Supply</span
                 >
                 <div
-                  class="flex-1 border-b border-dotted w-10 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
+                  class="flex-1 border-b border-dotted w-20 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
                 ></div>
               </div>
               <div class="flex items-center justify-between">
-                <span class="text-[#FFE37D] lg:text-white text-[14px] font-[400]">Token Type</span>
+                <span class="text-[#FFE37D] lg:text-white text-[10px] font-[400]">Token Type</span>
                 <div
-                  class="flex-1 border-b border-dotted w-10 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
+                  class="flex-1 border-b border-dotted w-20 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
                 ></div>
               </div>
               <div class="flex items-center justify-between">
-                <span class="text-[#FFE37D] lg:text-white text-[14px] font-[400]"
+                <span class="text-[#FFE37D] lg:text-white text-[10px] font-[400]"
                   >Initial Network</span
                 >
                 <div
-                  class="flex-1 border-b border-dotted w-10 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
+                  class="flex-1 border-b border-dotted w-20 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
                 ></div>
               </div>
               <div class="flex items-center justify-between">
-                <span class="text-[#FFE37D] lg:text-white text-[14px] font-[400]">Migration</span>
+                <span class="text-[#FFE37D] lg:text-white text-[10px] font-[400]">Migration</span>
                 <div
-                  class="flex-1 border-b border-dotted w-10 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
+                  class="flex-1 border-b border-dotted w-20 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
                 ></div>
               </div>
               <div class="flex items-center justify-between">
-                <span class="text-[#FFE37D] lg:text-white text-[14px] font-[400]">Governance</span>
+                <span class="text-[#FFE37D] lg:text-white text-[10px] font-[400]">Governance</span>
                 <div
-                  class="flex-1 border-b border-dotted w-10 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
+                  class="flex-1 border-b border-dotted w-20 md:w-40 lg:w-30 border-[#FFE37D] lg:border-white mx-2"
                 ></div>
               </div>
             </div>
             <div class="space-y-1 text-white text-[14px] font-[400] min-w-fit">
-              <div class="flex items-center text-white text-[14px] font-[400]">
+              <div class="flex items-center text-white text-[10px] font-[400]">
                 <span>NECTA</span>
               </div>
-              <div class="flex items-center text-white text-[14px] font-[400]">
+              <div class="flex items-center text-white text-[10px] font-[400]">
                 <span>NCT</span>
               </div>
-              <div class="flex items-center text-white text-[14px] font-[400]">
+              <div class="flex items-center text-white text-[10px] font-[400]">
                 <span>617,400,000</span>
               </div>
-              <div class="flex items-center text-white text-[14px] font-[400]">
+              <div class="flex items-center text-white text-[10px] font-[400]">
                 <span>Utility + Governance</span>
               </div>
-              <div class="flex items-center text-white text-[14px] font-[400]">
+              <div class="flex items-center text-white text-[10px] font-[400]">
                 <span>Base</span>
               </div>
-              <div class="flex items-center text-white text-[14px] font-[400]">
+              <div class="flex items-center text-white text-[10px] font-[400]">
                 <span>NECTAR Native Chain (2026)</span>
               </div>
-              <div class="flex items-center text-white text-[14px] font-[400]">
+              <div class="flex items-center text-white text-[10px] font-[400]">
                 <span>DAO-enabled</span>
               </div>
             </div>
@@ -423,7 +422,7 @@
       <div class="w-full flex justify-center">
         <GradientText edgeOpacity={0.2}>
           <p
-            class="text-[30px] w-58 lg:text-[36px] lg:w-full lg:mt-[67px] mt-[50px] font-medium leading-[120%] text-center"
+            class="text-[23px] w-58 lg:text-[36px] lg:w-full lg:mt-[67px] mt-[50px] font-[500] leading-[120%] text-center"
           >
             System Design & Architecture
           </p>
@@ -441,10 +440,12 @@
             ></div>
           </div>
           <div class="flex flex-col w-full px-4 gap-4">
-            <p class="text-[11.91px] lg:text-[24px] leading-[120%] font-medium">
+            <p class="text-[12px] lg:text-[24px] leading-[120%] font-[500]">
               NECTA's architecture is:
             </p>
-            <ul class="ml-6 list-disc text-[#FFFFFFCC] text-[8px] lg:text-[18px] leading-[140%]">
+            <ul
+              class="ml-6 list-disc text-[#FFFFFFCC] text-[9px] font-[400] lg:text-[18px] leading-[140%]"
+            >
               <li>Modular: Like a honeycomb – every project is a functional cell</li>
               <li>Convergent: Like 6174 – flows naturally into equilibrium</li>
               <li>Governed: DAO-enabled + burn-and-lock mechanisms for control</li>
@@ -463,8 +464,10 @@
             ></div>
           </div>
           <div class="flex flex-col w-full px-4 gap-4">
-            <p class="text-[11.91px] lg:text-[24px] leading-[120%] font-medium">Smart Contracts:</p>
-            <ul class="ml-6 list-disc text-[#FFFFFFCC] text-[8px] lg:text-[18px] leading-[140%]">
+            <p class="text-[12px] lg:text-[24px] leading-[120%] font-[500]">Smart Contracts:</p>
+            <ul
+              class="ml-6 list-disc text-[#FFFFFFCC] text-[9px] font-[400] lg:text-[18px] leading-[140%]"
+            >
               <li>Agent Payments</li>
               <li>Compute Credits</li>
               <li>Vault Access</li>
@@ -474,7 +477,7 @@
         </div>
       </div>
     </aside>
-    <aside class="relative overflow-y-hidden mt-[100px] rounded-[20px] lg:rounded-[40px]">
+    <aside class="relative overflow-y-hidden mt-[100px] rounded-[20px] md:rounded-[40px]">
       <!--    bee image-->
       <img
         src={bee}
@@ -488,17 +491,17 @@
       />
       <!-- LAYER 1: Background images (z-0) -->
       <div
-        class="absolute top-0 left-0 w-full h-full rounded-[20px] lg:rounded-[40px] overflow-hidden z-0"
+        class="absolute top-0 left-0 w-full h-full rounded-[20px] md:rounded-[40px] overflow-hidden z-0"
       >
         <img src={beeNet1} class="object-cover w-full z-20 h-[100%] mix-blxend-overlay" alt="" />
       </div>
       <div
-        class="absolute top-0 lg:-top-[17px] left-0 w-full h-fit rounded-t-[40px] overflow-hidden"
+        class="absolute top-0 lg:-top-[17px] left-0 w-full h-fit md:rounded-t-[40px] overflow-hidden"
       >
         <img src={secondBlur} class="object-cover w-full h-fit" alt="" />
       </div>
       <div
-        class="absolute top-0 lg:-top-[72px] left-0 w-full h-fit rounded-t-[40px] overflow-hidden"
+        class="absolute top-0 lg:-top-[72px] left-0 w-full h-fit md:rounded-t-[40px] overflow-hidden"
       >
         <img src={nectaCoinCurveBg} class="object-cover w-full h-fit" alt="" />
       </div>
@@ -507,7 +510,7 @@
         class="flex px-4 lg:px-20 py-10 lg:py-28 justify-center flex-col relative z-20 gap-5 text-center items-center"
       >
         <div
-          class="rounded-lg px-3 w-fit flex justify-center items-center text-white text-[14px] h-[30px] leading-[120%] tracking-[2%] ring-1 ring-white/[0.15] shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_0_0_1px_rgba(255,255,255,0.05)] bg-[#FFFFFF14]"
+          class="rounded-lg px-3 w-fit mt-10 md:mt-0 flex justify-center items-center text-white text-[14px] h-[30px] leading-[120%] tracking-[2%] ring-1 ring-white/[0.15] shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_0_0_1px_rgba(255,255,255,0.05)] bg-[#FFFFFF14]"
         >
           One Token. Every Layer
         </div>
@@ -522,9 +525,13 @@
           </GradientText>
         </div>
 
-        <p class="text-[14px] md:text-[18px] font-[400] leading-[140%] md:max-w-[855px] text-white">
-          $NECTA coordinates value, access, and accountability across products, networks, and user
-          types.
+        <p
+          class="text-[14px] md:text-[18px] pb-2 font-[400] leading-[140%] md:max-w-[855px] text-white"
+        >
+          $NECTA (NCT) is the native utility, governance, and incentive token powering every corner
+          of the NECTER ecosystem. From running compute nodes in Dockhive to deploying intelligent
+          agents on TIWA. $NECTA coordinates value, access, and accountability across products,
+          networks, and user types.
         </p>
 
         <div class="w-full max-w-4xl mx-auto space-y-4">
@@ -595,7 +602,7 @@
       <div class="w-full flex justify-center">
         <GradientText edgeOpacity={0.2}>
           <p
-            class="text-[16px] md:text-[32px] w-full lg:mt-[67px] mt-[50px] font-[500] leading-[120%] text-center"
+            class="text-[16px] md:text-[32px] w-full lg:mt-[67px] mt-[30px] font-[500] leading-[120%] text-center"
           >
             Roadmap Highlights
           </p>
@@ -609,7 +616,7 @@
       </p>
 
       <div class="relative z-20 hidden lg:block lg:mt-[80px] mt-[40px] lg:mb-[80px] mb-[40px]">
-        <div class="flex justify-between mb-8 text-[10px] lg:text-[14px] text-white/60">
+        <div class="flex justify-between mb-8 text-[10px] font-[400] lg:text-[14px] text-white/60">
           <div class="text-center">Q2 2025</div>
           <div class="text-center">Q2 2025</div>
           <div class="text-center">Q3 2025</div>
@@ -812,34 +819,34 @@
       </div>
 
       <div
-        class="absolute top-0 lg:-top-[72px] left-0 z-10 w-full h-fit rounded-t-[40px] overflow-hidden"
+        class="absolute top-0 left-0 z-10 w-full h-fit lg:rounded-t-[40px] overflow-hidden"
       >
         <img src={nectaCoinCurveBg} class="object-cover w-full h-fit" alt="" />
       </div>
       <div
-        class="absolute top-0 lg:-top-[17px] left-0 w-full h-fit rounded-t-[40px] overflow-hidden"
+        class="absolute top-0 lg:-top-[17px] left-0 w-full h-fit lg:rounded-t-[40px] overflow-hidden"
       >
         <img src={secondBlur} class="object-cover w-full h-fit" alt="" />
       </div>
       <div
-        class="absolute bottom-0 rotate-180 z-10 left-0 w-full h-fit rounded-t-[40px] overflow-hidden"
-      >
-        <img src={nectaCoinCurveBg} class="object-cover w-full h-full" alt="" />
-      </div>
+      class="absolute bottom-0 rotate-180 z-10 left-0 w-full h-fit rounded-t-[40px] overflow-hidden"
+    >
+      <img src={nectaCoinCurveBg} class="object-cover w-full h-full" alt="" />
+    </div>
 
-      <div class="lg:flex px-0 grid grid-cols-1">
+      <div class="lg:flex px-0 grid grid-cols-1 gap-10">
         <div
           use:fadeIn={{ delay: 150, direction: 'left', offset: 80, duration: 600 }}
-          class="flex-col border border-red-500 lg:w-1/2 mx-auto flex gap-5"
+          class="flex-col lg:w-1/2 mx-auto flex gap-5"
         >
           <div
             class="rounded-lg px-3 w-fit h-[30px] items-center flex justify-center text-white text-[14px] leading-[120%] tracing-[2%] ring-1 ring-white/[0.15] shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_0_0_1px_rgba(255,255,255,0.05)] bg-[#FFFFFF14]"
           >
             Kaprekar's Constant
           </div>
-          <div class="!mb-6">
+          <div class="!mb-4">
             <GradientText edgeOpacity={0.3}>
-              <p class="text-[22px] md:text-[36px] md:max-w-[608px] font-[500] leading-[120%]">
+              <p class="text-[23px] md:text-[36px] md:max-w-[608px] font-[500] leading-[120%]">
                 6174 Flow —
                 <br /> Designed for Economic Balance
               </p>
@@ -854,7 +861,7 @@
             data, compute, or training — is rewarded through a convergent economic model.
           </p>
         </div>
-        <div class="border mx-auto border-red-500 w-1/2">
+        <div class="mx-auto lg:w-1/2">
           <img
             use:fadeIn={{ delay: 150, direction: 'right', offset: 80, duration: 600 }}
             src={rubixBox}
@@ -863,8 +870,8 @@
           />
         </div>
       </div>
-      <div class="lg:absolute my-7 lg:mt-0 lg:bottom-1/4 lg:left-4 w-fit rotate-[17.74deg]">
-        <img src={nectaHerocoin} class="md:max-w-[584.1px] h-[309px] max-w-[402.89px]" alt="" />
+      <div class="lg:absolute  mt-20 mb-5 lg:mt-0 lg:bottom-1/4 lg:left-4 w-fit rotate-[17.74deg]">
+        <img src={nectaHerocoin} class="md:max-w-[584.1px] h-[213px] lg:h-[309px] max-w-[402.89px]" alt="" />
         <div
           class="absolute bg-gradient-to-b w-full from-[#0A070100] bottom-0 h-full to-[#0A0701]/50 block md:hidden"
         ></div>
@@ -888,22 +895,23 @@
         </p>
         <div
           use:fadeIn={{ delay: 500, direction: 'in', duration: 600 }}
-          class="flex md:flex-row flex-col gap-1 md:gap-3"
+          class="flex md:flex-row w-full flex-col gap-2 md:gap-3"
         >
           <a href="/protocol">
             <button
-              class="bg-gradient-to-b from-white to-[#D7D3E0] cursor-pointer text-(--necta-cod) px-6 py-3 rounded-full font-semibold text-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg whitespace-nowrap"
+              class="bg-gradient-to-b w-full from-white to-[#D7D3E0] cursor-pointer text-(--necta-cod) font-[500] px-6 py-3 rounded-full text-[16px] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg whitespace-nowrap"
             >
               NECTA Genesis Protocol
             </button>
           </a>
           <div
-            class="text-white text-sm px-6 cursor-pointer py-3 rounded-full tracing-[2%] ring-1 ring-white/[0.15] shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_0_0_1px_rgba(255,255,255,0.05)] bg-gradient-to-b from-[#FFFFFF40] bg-[#C0BECD40] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg whitespace-nowrap"
+            class="text-white text-[16px] px-6 font-[500] cursor-pointer py-3 rounded-full tracing-[2%] ring-1 ring-white/[0.15] shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_0_0_1px_rgba(255,255,255,0.05)] bg-gradient-to-b from-[#FFFFFF40] bg-[#C0BECD40] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg whitespace-nowrap"
           >
             Join Our Telegram
           </div>
         </div>
       </div>
+      
     </aside>
 
     <Footer />

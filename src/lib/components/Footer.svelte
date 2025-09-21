@@ -45,7 +45,7 @@
       </div>
 
       <!-- Company -->
-      <div class="mt-3">
+      <div class="mt-5 lg:mt-3">
         <h3 class="text-white font-[500] text-[14px] md:text-[16px] mb-[10px] ">Company</h3>
         <ul class="space-y-3 md:space-y-2">
           <li>
@@ -73,7 +73,7 @@
       </div>
 
       <!-- Resources -->
-      <div class="mt-3">
+      <div class="mt-5 lg:mt-3">
         <h3 class="text-white font-[500] text-[14px] md:text-[16px] mb-[10px]">Resources</h3>
         <ul class="space-y-3 md:space-y-4">
           <li>
@@ -94,7 +94,7 @@
       </div>
 
       <!-- Solutions -->
-      <div class="mt-3">
+      <div class="mt-5 lg:mt-3">
         <h3 class="text-white font-[500] text-[14px] md:text-[16px] mb-[10px]">Solutions</h3>
         <ul class="space-y-3 md:space-y-4">
           <li>
@@ -129,7 +129,7 @@
       </div>
 
       <!-- Legal & Compliance -->
-      <div class="mt-3">
+      <div class="mt-5 lg:mt-3">
         <h3 class="text-white font-[500] text-[14px] md:text-[16px] mb-[10px]">
           Legal & Compliance
         </h3>
@@ -159,7 +159,7 @@
       </div>
 
       <!-- Pages -->
-      <div class="mt-3">
+      <div class="mt-5 lg:mt-3">
         <h3 class="text-white font-[500] text-[14px] md:text-[16px] mb-[10px]">Pages</h3>
         <ul class="space-y-3 md:space-y-4">
           <li>
@@ -188,7 +188,7 @@
     </div>
 
     <!-- Divider -->
-    <div class="w-full h-[1px] border-[1px] border-[#FFFFFF3B] my-12 md:my-8"></div>
+    <div class="w-full h-[1px] border-[1px] border-[#FFFFFF3B] my-8 lg:my-12 md:my-8"></div>
 
     <!-- Bottom Footer -->
     <div
