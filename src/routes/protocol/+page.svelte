@@ -48,56 +48,44 @@
   }
 </script>
 
-<section class="text-white font-extralight pb-5 flex flex-col gap-9 bg-[#0A0701] h-full">
+<section
+  class="text-white px-6 font-['Satoshi'] sm:px-6 md:px-8 lg:px-36 xl:px-36 pb-5 2xl:px-40 flex flex-col gap-9 bg-[#0A0701] h-full"
+>
   <NavBar />
-  <aside class=" h-[100dvh] flex items-center relative rounded-[20px] lg:rounded-b-[40px]">
-    <div class="absolute right-0 rounded-t-[12px] h-[100dvh] w-[100%] lg:w-[60%]">
-      <video class="h-full w-full object-cover" autoplay loop muted playsinline>
+  <aside class="h-[100dvh] flex items-center relative rounded-[20px] lg:rounded-b-[40px]">
+    <div class="absolute right-0 h-[100dvh] w-[100%] lg:w-[60%]">
+      <video class="object-cover w-full h-full" autoplay loop muted playsinline>
         <source src={nectaCoinVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
+
     <div
-      class="absolute w-full bg-gradient-to-b from-[#0A070100] bottom-0 h-full to-[#0A0701]"
-    ></div>
-    <div
-      class="absolute hidden lg:block right-0 top-0 h-[100dvh] w-[60%] rounded-t-[12px]"
-      style="
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgba(10, 7, 1, 0) 70%,
-      rgba(10, 7, 1, 0.25) 85%,
-      #0A0701 100%
-    );
-    backdrop-filter: blur(1px);   /* optional extra softness */
-  "
-    ></div>
-    <div
-      class="absolute hidden lg:block right-0 top-0 h-[100dvh] w-[60%] rounded-t-[12px]"
-      style="
-    background: linear-gradient(
-      to left,
-      transparent 0%,
-      rgba(10, 7, 1, 0) 70%,
-      rgba(10, 7, 1, 0.25) 85%,
-      #0A0701 100%
-    );
-    backdrop-filter: blur(1px);   /* optional extra softness */
-  "
+      class="absolute w-full bottom-0 h-full bg-gradient-to-b from-transparent via-[#0A070140] to-[#0A0701] lg:hidden"
     ></div>
 
+    <div
+      class="absolute hidden lg:block right-0 top-0 h-[100dvh] w-[60%] rounded-t-[12px] bg-gradient-to-t from-[#0A0701] via-[#0A070180] via-85% to-transparent"
+    ></div>
+
+    <!-- Left to right gradient overlay for better text readability -->
+    <div
+      class="absolute hidden lg:block right-0 top-0 h-[100dvh] w-[60%] rounded-t-[12px] bg-gradient-to-r from-[#0A0701CC] via-[#0A070160] via-70% to-transparent"
+    ></div>
+
+    <!-- Bottom Wax Image -->
     <div
       class="absolute bottom-0 scale-x-[-1] left-0 w-full h-fit rounded-t-[40px] overflow-hidden"
     >
       <img src={bottomWax1} class="object-cover w-full h-full" alt="" />
     </div>
 
-    <div class=" z-10 px-4">
-      <div class="  h-full pb-[10%]">
+    <!-- Content Section -->
+    <div class="z-10 px-4">
+      <div class="h-full pb-[10%]">
         <h1
           use:fadeIn={{ delay: 100, direction: 'down', offset: 40, duration: 600 }}
-          class="lg:text-[58px] font-medium text-[38.66px] bg-gradient-to-r from-[#D3D0C8] to-[#FFFFFF] bg-clip-text text-transparent leading-[120%] tracking-[0%]"
+          class="lg:text-[45px] font-[700] text-[38.66px] bg-gradient-to-r from-[#D3D0C8] to-[#FFFFFF] bg-clip-text text-transparent leading-[120%] tracking-[0%]"
         >
           NECTA Genesis Protocol
           <br />
@@ -117,62 +105,93 @@
           use:fadeIn={{ delay: 500, direction: 'in', duration: 600 }}
           class="h-[44px] cursor-pointer rounded-[40px] bg-gradient-to-b from-[#FFE37D] to-[#FF9809] px-[30px] text-[14px] leading-[120%] font-medium tracking-[0%] text-[#0A0701] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg lg:h-[52px] lg:px-[40px] lg:text-[16px]"
         >
-          Get started
+          Whitelist Your Wallet
         </button>
       </div>
     </div>
   </aside>
 
-  <aside
-    class="pr-4 lg:pr-8 mt-[40px] lg:mt-[50px] relative rounded-2xl md:rounded-[40px] border-t-1 border-transparent"
-  >
+  <aside class="mt-10 lg:mt-16 relative rounded-2xl md:rounded-[40px]">
     <p
-      class="text-[16px] lg:text-[36px] w-full lg:mt-[67px] mt-[50px] font-medium leading-[120%] text-center"
+      class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-medium leading-[120%] text-center mb-8 lg:mb-16"
     >
       <GradientText edgeOpacity={0.3}>Who Can Participate?</GradientText>
     </p>
 
-    <div
-      class="mt-[40px] lg:mt-[133px] flex flex-col lg:flex-row gap-[45px] justify-between md:px-20"
-    >
-      <div class="pt-[14px] flex flex-col items-center flex-1">
-        <div class=" relative h-fit">
-          <img src={pillars} alt="" class="grayscale-100 max-w-[176.98px] md:max-w-[356px]" />
-          <div
-            class="absolute w-full max-w-[176.98px] md:max-w-[356px] bg-gradient-to-b from-[#0A070100] top-0 h-[100%] to-[#0A0701]"
-          ></div>
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
+      <!-- Legacy Users -->
+      <div class="flex-1 flex flex-col items-center">
+        <div class="relative mb-6">
+          <img
+            src={pillars}
+            alt=""
+            class="grayscale w-full max-w-[200px] sm:max-w-[250px] lg:max-w-[300px] xl:max-w-[356px]"
+          />
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0A0701]"></div>
         </div>
-        <div class="flex flex-col w-full px-4 gap-4">
-          <p class="text-[24px] leading-[120%] font-medium">Legacy Users:</p>
-          <ul class="ml-6 list-disc text-[#FFFFFFCC] text-[18px] leading-[140%]">
-            <li>Convert old DHT tokens or Dockhive NFTs Mint your NGT to claim</li>
-            <li>1 DHT = 4 NECTA • NFT = Bonus based on rarity</li>
-            <li>future NECTA allocation</li>
+        <div class="w-full max-w-md text-center lg:text-left">
+          <h3 class="text-xl lg:text-2xl font-medium mb-4">Legacy Users:</h3>
+          <ul
+            class="text-sm sm:text-base lg:text-lg text-[#FFFFFFCC] leading-[140%] space-y-2 text-left"
+          >
+            <li class="flex items-start">
+              <span class="text-[#FFFFFFCC] mr-2">•</span>
+              <span>Convert old DHT tokens or Dockhive NFTs Mint your NGT to claim</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#FFFFFFCC] mr-2">•</span>
+              <span>1 DHT = 4 NECTA • NFT = Bonus based on rarity</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#FFFFFFCC] mr-2">•</span>
+              <span>future NECTA allocation</span>
+            </li>
           </ul>
         </div>
       </div>
 
-      <div class="w-px hidden lg:flex bg-[#362E21]"></div>
+      <!-- Divider -->
+      <div class="hidden lg:block w-px bg-[#362E21]"></div>
 
-      <div class="pt-[14px] flex flex-col items-center flex-1">
-        <div class="relative">
-          <img src={slab} alt="" class="grayscale-100 max-w-[176.98px] md:max-w-[356px]" />
-          <div
-            class="absolute w-full max-w-[176.98px] md:max-w-[356px] bg-gradient-to-b from-[#0A070100] top-0 h-[100%] to-[#0A0701]"
-          ></div>
+      <!-- New Users -->
+      <div class="flex-1 flex flex-col items-center">
+        <div class="relative mb-6">
+          <img
+            src={slab}
+            alt=""
+            class="grayscale w-full max-w-[200px] sm:max-w-[250px] lg:max-w-[300px] xl:max-w-[356px]"
+          />
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0A0701]"></div>
         </div>
-        <div class="flex flex-col w-full px-4 gap-4">
-          <p class="text-[24px] leading-[120%] font-medium">New Users</p>
-          <ul class="ml-6 list-disc text-[#FFFFFFCC] text-[18px] leading-[140%]">
-            <li>
-              <strong>Complete quests:</strong>
-              <ul class="ml-4 list-disc">
-                <li>Follow Hive projects on Twitter.</li>
-                <li>Join Telegram & Discord.</li>
-                <li>Repost the pinned tweet.</li>
-              </ul>
+        <div class="w-full max-w-md text-center lg:text-left">
+          <h3 class="text-xl lg:text-2xl font-medium mb-4">New Users</h3>
+          <ul
+            class="text-sm sm:text-base lg:text-lg text-[#FFFFFFCC] leading-[140%] space-y-2 text-left"
+          >
+            <li class="flex items-start">
+              <span class="text-[#FFFFFFCC] mr-2">•</span>
+              <div>
+                <strong>Complete quests:</strong>
+                <ul class="mt-1 ml-4 space-y-1">
+                  <li class="flex items-start">
+                    <span class="text-[#FFFFFFCC] mr-2 text-xs">•</span>
+                    <span>Follow Hive projects on Twitter.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-[#FFFFFFCC] mr-2 text-xs">•</span>
+                    <span>Join Telegram & Discord.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-[#FFFFFFCC] mr-2 text-xs">•</span>
+                    <span>Repost the pinned tweet.</span>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li>Mint your NGT for a NECTA airdrop (vested).</li>
+            <li class="flex items-start">
+              <span class="text-[#FFFFFFCC] mr-2">•</span>
+              <span>Mint your NGT for a NECTA airdrop (vested).</span>
+            </li>
           </ul>
         </div>
       </div>
