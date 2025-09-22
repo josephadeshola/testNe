@@ -108,8 +108,9 @@
   }
 </script>
 
-<section class="px-6 font-['Satoshi'] sm:px-6 md:px-8 lg:px-36 xl:px-36 bg-black 2xl:px-40">
-  <div class="text-white pb-5 lg:px-7 font-light flex flex-col gap-9 bg-[#0A0701] h-full">
+<section class="bg-black text-white font-['Satoshi'] h-full pb-5">
+  <div class="max-w-6xl mx-auto bg-[#0A0701] px-6 sm:px-8 lg:px-8">
+
     <NavBar button_link="/protocol" />
 
     <aside class="rounded-[20px] h-screen lg:rounded-b-[40px] relative">
@@ -895,7 +896,7 @@
         </p>
         <div
           use:fadeIn={{ delay: 500, direction: 'in', duration: 600 }}
-          class="flex md:flex-row w-full flex-col gap-2 md:gap-3"
+          class="flex md:flex-row justify-center w-full flex-col gap-2 md:gap-3"
         >
           <a href="/protocol">
             <button

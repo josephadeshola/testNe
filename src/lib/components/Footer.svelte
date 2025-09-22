@@ -7,7 +7,7 @@
 </script>
 
 <aside
-  class="md:mt-[160px] px-4 md:px-8 relative rounded-2xl md:rounded-[40px] border-t-1 border-transparent"
+  class=" px-4 md:px-8 relative rounded-2xl md:rounded-[40px] border-t-1 border-transparent"
   style="border-image: linear-gradient(to right, #FFE37D00, #FFE37D00, #FFE37D, #FFE37D00, #FFE37D00) 1; "
 >
   <div
